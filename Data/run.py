@@ -11,7 +11,7 @@ import pandas as pd
 #path = webdriver.Chrome(executable_path=r"C:/Users/Andrew/Desktop/EdX/Self Projects/Classification/chromedriver.exe")
 path = r"C:/Users/Andrew/Desktop/EdX/Self Projects/Classification/chromedriver.exe"
 file_path = r"C:/Users/Andrew/Desktop/EdX/Self Projects/Classification/Data_entry/"
-df = gs.get_jobs('data scientist',200,False,path,5)
+df = gs.get_jobs('data scientist',970,False,path,5)
 
 
 #<span class="css-1uyte9r css-hca4ks e1wijj242">$100K - $160K <span class="css-0 e1wijj240">(Glassdoor est.)</span><span class="SVGInline greyInfoIcon"><svg class="SVGInline-svg greyInfoIcon-svg" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 14A7 7 0 117 0a7 7 0 010 14zm0-.7A6.3 6.3 0 107 .7a6.3 6.3 0 000 12.6zm-.7-7a.7.7 0 011.4 0v4.2a.7.7 0 01-1.4 0zM7 4.2a.7.7 0 110-1.4.7.7 0 010 1.4z" fill="#505863" fill-rule="evenodd"></path></svg></span><div class="hidden"></div></span>
@@ -24,7 +24,7 @@ df = gs.get_jobs('data scientist',200,False,path,5)
            # driver.find_element_by_xpath('.//li[@class="next"]//a').click()
 
 
-df.to_csv('SoftwareEngineer_extra.csv',index=False)
+df.to_csv('Data Scientist_20210122.csv',index=False)
 
 #df_Michigan4 = df
 

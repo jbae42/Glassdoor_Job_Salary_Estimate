@@ -24,7 +24,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
     driver = webdriver.Chrome(executable_path=path, options=options)
     driver.set_window_size(1120, 1000)
     
-    url = 'https://www.glassdoor.com/Job/software-engineer-new-grad-jobs-SRCH_KO0,26.htm?seniorityType=entrylevel'
+    url = 'https://www.glassdoor.com/Job/data-scientist-jobs-SRCH_KO0,14.htm?seniorityType=entrylevel'
     #url = 'https://www.glassdoor.com/Job/data-science-jobs-SRCH_KO0,12.htm?seniorityType=entrylevel'
     #url = 'https://www.glassdoor.com/Job/software-developer-jobs-SRCH_KO0,18.htm?seniorityType=entrylevel'
     #url = 'https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=false&clickSource=searchBtn&typedKeyword='+keyword+ '&sc.keyword='+keyword+'&locT=&locId=&jobType='
