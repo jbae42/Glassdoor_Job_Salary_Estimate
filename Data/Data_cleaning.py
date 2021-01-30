@@ -103,7 +103,6 @@ df['spark'] = df['Job Description'].apply(lambda x: 1 if 'spark' in x.lower() el
 df['AWS'] = df['Job Description'].apply(lambda x: 1 if 'aws' in x.lower() else 0)
 df['Tableau'] = df['Job Description'].apply(lambda x: 1 if 'tableau' in x.lower() else 0)
 df['Hadoop'] = df['Job Description'].apply(lambda x: 1 if 'hadoop' in x.lower() else 0)
-df['experience'] = df['Job Description'].apply(lambda x: 1 if 'year' in x.lower() else 0)
 df['C_lang'] = df['Job Description'].apply(lambda x: 1 if 'C#' in x or 'C++' in x else 0)
 df['Java'] = df['Job Description'].apply(lambda x: 1 if 'java' in x.lower() else 0)
 df['app'] = df['Job Description'].apply(lambda x: 1 if 'application' in x.lower() else 0)

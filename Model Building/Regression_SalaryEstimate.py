@@ -68,7 +68,7 @@ mean_absolute_error(y_sal_test, xgb.predict(X_sal_test))
 
 cv_score = cross_val_score(xgb, X_sal_train,y_sal_train, cv=10)
 
-## Try tuning the hyperparameters in random forest regressor
+## Try tuning the hyperparameters in random forest regressor - this gives the lowest MAE
 n_estimators = [int(x) for x in np.linspace(start = 10, stop = 80, num = 10)]
 max_features = ['auto','sqrt']
 max_depth = [2,4]
@@ -88,6 +88,7 @@ rf_Grid = GridSearchCV(estimator = rf, param_grid = param_grid, cv=3, verbose=2,
 rf_Grid.fit(X_sal_train, y_sal_train)
 rf_Grid.score(X_sal_train, y_sal_train)
 rf_Grid.score(X_sal_test,y_sal_test)
+mean_absolute_error(y_sal_test, rf_Grid.predict(X_sal_test))
 
 ### Step 6. Results
 '''
@@ -97,3 +98,12 @@ Since the dataset was extracted from glassdoor website where the salary data are
 many salary data may have been affected by the location (state), rather than the job skills described in
 the job description. This may have caused weak correlation between the listed job skills and salary.
 '''
+
+### Final Step. Pickel the model for productionization
+import pickle
+pickl = {'model2': rf_Grid}
+pickle.dump( pickl, open( 'regressor' + ".p", "wb" ) )
+file_name = "regressor.p"
+with open(file_name, 'rb') as pickled:
+    data = pickle.load(pickled)
+    job_cls = data['model2']

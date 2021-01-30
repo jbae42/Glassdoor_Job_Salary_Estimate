@@ -130,3 +130,13 @@ mean_absolute_error(y_test, pred2)
 confusion_matrix(knn2.predict(X_test), np.ravel(y_test))
 
 classification_report(y_test, pred2)
+
+
+### Final Step: Pickel the Best Model for Productionization
+import pickle
+pickl = {'model1': classifier}
+pickle.dump( pickl, open( 'classifier' + ".p", "wb" ) )
+file_name = "classifier.p"
+with open(file_name, 'rb') as pickled:
+    data = pickle.load(pickled)
+    job_cls = data['model1']
