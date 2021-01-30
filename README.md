@@ -1,5 +1,4 @@
 # Glassdoor_Job_Salary_Estimate
-# Glassdoor_Job_Salary_Estimate
 ## Project Overview
 * Objective: The objective of this project is to build a classification model and a regression model that estimate the best fitting job type among data scientist, data analyst, and software engineering and the respective salary based on the set of skill set (input).
 * Potential Use: The product of this project (job type classification model and salary regression model) can be used to assist any candidate seeking an entry level position in data analytics or software engineering field and provide the best fitting job type and estimated salary based on the candidate's skill sets.
@@ -29,17 +28,17 @@ Collected data were cleaned to be used as input data for models. The cleaning pr
 ## 3. Exploratory Data Analysis (EDA)
 Cleaned dataset was then used to perform EDA. Few highlights are presented:
 
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Histogram%20on%20Entry%20Level%20Data%20Analyst%20Salary.png)
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Histogram%20on%20Entry%20Level%20Data%20Scientist%20Salary.png)
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Histogram%20on%20Entry%20Level%20Software%20Engineer%20Salary.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Histogram%20on%20Entry%20Level%20Data%20Analyst%20Salary.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Histogram%20on%20Entry%20Level%20Data%20Scientist%20Salary.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Histogram%20on%20Entry%20Level%20Software%20Engineer%20Salary.png)
 
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Top%2020%20States%20with%20Highest%20Average%20Salary%20in%20Entry%20Data%20Analyst%20Positions.png)
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Top%2020%20States%20with%20Highest%20Average%20Salary%20in%20Entry%20Data%20Scientist%20Position.png)
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Top%2020%20States%20with%20Highest%20Average%20Salary%20in%20Entry%20Software%20Engineer%20Positions.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Top%2020%20States%20with%20Highest%20Average%20Salary%20in%20Entry%20Data%20Analyst%20Positions.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Top%2020%20States%20with%20Highest%20Average%20Salary%20in%20Entry%20Data%20Scientist%20Position.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/Top%2020%20States%20with%20Highest%20Average%20Salary%20in%20Entry%20Software%20Engineer%20Positions.png)
 
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/wordcloud_dataAnalyst.png)
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/wordcloud_datascientist.png)
-![alt text](https://github.gatech.edu/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/wordcloud_softwareEngineer.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/wordcloud_dataAnalyst.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/wordcloud_datascientist.png)
+![](https://github.com/jbae42/Glassdoor_Job_Salary_Estimate/blob/master/Exploratory%20Data%20Analysis/images/wordcloud_softwareEngineer.png)
 
 ## 4. Model Building
 With the cleaned dataset, dummy variables were created. The dataset was then split into train and test sets with the ratio of 0.8:0.2, respectively.
